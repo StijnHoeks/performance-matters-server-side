@@ -1,7 +1,7 @@
 var express = require('express')
 var request = require('request')
 var app = express()
-var host = 'http://dennistel.nl/movies/'
+var host = 'https://stijnhoeks.github.io/performance-matters-server-side/app/'
 
 app.use(express.static('public'))
 app.set('view engine', 'ejs');
