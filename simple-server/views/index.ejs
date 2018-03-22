@@ -1,0 +1,15 @@
+<% include head.ejs %>
+
+<h1>Photos</h1>
+<% for(var i = 0; i < data.photos.length; i++) {%>
+<a href="<%= data.photos[i].id%>">
+	<article>
+	    <header>
+			<h1><b>ID</b> <%= data.photos[i].id %></h1>
+			<p><b>CAM</b> <%= data.photos[i].camera.full_name %></p>
+			<p><b>SOL</b> <%= data.photos[i].sol %></p>
+	    </header>
+    	<img src="<%= data.photos[i].img_src %>" />	
+	</article>
+</a>
+<% } %>
