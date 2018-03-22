@@ -19,7 +19,10 @@ app.get('/:id', function (req, res) {
   request(host/* + req.params.photos*/, function (error, response, body) {
     var data = JSON.parse(body);
     var photos = req.params;
-    console.log(data);
+    var id = req.params.id;
+
+    console.log(id.indexOf(req.params))
+    /*console.log(data);*/
     res.render('detail', {
     	data: data,
       photos: photos
