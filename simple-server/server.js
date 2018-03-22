@@ -18,11 +18,11 @@ app.get('/', function (req, res) {
 app.get('/:id', function (req, res) {
   request(host/* + req.params.photos*/, function (error, response, body) {
     var data = JSON.parse(body);
-    /*var photos = req.params;*/
+    var photos = req.params;
     console.log(data);
     res.render('detail', {
-    	data: data/*,
-      photos: photos*/
+    	data: data,
+      photos: photos
     })
   });
 })
