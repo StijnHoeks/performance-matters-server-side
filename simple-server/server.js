@@ -26,7 +26,7 @@ app.get('/', function (req, res) {
 })
 
 app.get('/:id', function (req, res) {
-  request(host /*+ req.params.photos*/, function (error, response, body) {
+  request(host + req.params.photos, function (error, response, body) {
     var data = req.session.data;
     var photos = req.params;
     var id = req.params.id;
