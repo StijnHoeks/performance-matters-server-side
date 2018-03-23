@@ -21,8 +21,7 @@ app.get('/', function (req, res) {
   request(host, function (error, response, body) {
     var data = JSON.parse(body)
     res.render('index', {data: data})
-    /*req.session.data = data;
-    console.log("???");*/
+    req.session.data = data;
   });
 })
 
