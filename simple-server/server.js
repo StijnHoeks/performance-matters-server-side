@@ -29,7 +29,7 @@ app.get('/:id', function (req, res) {
   request(host + req.params.photos, function (error, response, body) {
     var data = req.session.data;
     var photos = req.params;
-    var id = req.params.id;
+    /*var id = req.params.id;*/
     console.log(req.session.data);
     res.render('detail', {
     	data: data,
