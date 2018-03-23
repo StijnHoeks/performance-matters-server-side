@@ -3,7 +3,6 @@ var request = require('request')
 var session = require('express-session')
 var app = express()
 var host = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=1&api_key=dbuOrGB7xoks2WobqPacpFP6fODFIU7gR0rStswa';
-/*var host = 'http://dennistel.nl/movies/'*/
 
 var sess = {
   secret: "gdhgfdgdshsdf",
