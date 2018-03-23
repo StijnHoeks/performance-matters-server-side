@@ -26,9 +26,9 @@ app.get('/', function (req, res) {
 })
 
 app.get('/:id', function (req, res) {
-  request(host/* + req.params.photos*/, function (error, response, body) {
+  request(host + req.params.photos, function (error, response, body) {
     var data = req.session.data;
-    var photos = req.params;
+    var photos = req.params.photos;
     /*var id = req.params.id;*/
     /*console.log(req.session.data);*/
     res.render('detail', {
