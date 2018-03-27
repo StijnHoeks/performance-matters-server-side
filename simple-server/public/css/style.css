@@ -16,11 +16,8 @@ a {
 	color: rgb(255,255,255);
 }
 header {
-	position: absolute;
 	padding: 1rem;
-	height: 100%;
-	/*color: rgb(255,255,255);*/
-	/*background: linear-gradient(to right, rgba(0,0,0,0.5) , rgba(0,0,0,0));*/
+	background-color: blue;
 }
 h1 {
 	font-size: 1.6rem;
