@@ -11,6 +11,7 @@ app.get('/app', function (req, res) {
   request(host, function (error, response, body) {
     var data = JSON.parse(body)
     res.render('index.ejs', {data: data})
+    console.log(data.photos)
   });
 })
 
