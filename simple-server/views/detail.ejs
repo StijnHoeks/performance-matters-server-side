@@ -1,10 +1,22 @@
 <% include head.ejs %>
 
+
 <article>
+	<nav>
+		<li>
+			<a href="http://localhost:1337" id="close">Photos</a>
+		</li>
+		<li>
+			<a>> img</a>
+		</li>
+	</nav>
 	<header>
-		
-		<img src="<%= data.photos[0].img_src %>" />
-		
-	</header>
+		<h1><b>ID</b> <%= data.photos[0].id %></h1>
+		<p><b>CAM</b> <%= data.photos[0].camera.full_name %></p>
+		<p><b>SOL</b> <%= data.photos[0].sol %></p>
+    </header>
+	<img src="<%= data.photos[0].img_src %>" />
+	
 </article>
+
 
