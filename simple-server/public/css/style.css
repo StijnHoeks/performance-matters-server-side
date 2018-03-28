@@ -18,7 +18,7 @@ body {
 section a {
 	display: block;
 	position: relative;
-	height: 25vw;
+	height: 10rem;
 	overflow: hidden;
 	margin: 1rem 0;
 	border-radius: 0.5rem;
@@ -26,10 +26,16 @@ section a {
 }
 header {
 	position: absolute;
-	width: 100%;
+	width: min-content;
+	white-space: nowrap;
 	padding: 1rem;
+	padding-right: 10vw;
 	color: rgb(255,255,255);
 	transition: all 200ms ease;
+}
+section header {
+	height: 100%;
+	background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0));
 }
 a:hover, a:hover header {
 	text-decoration: underline;
