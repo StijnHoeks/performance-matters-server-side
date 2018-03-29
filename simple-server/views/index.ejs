@@ -6,7 +6,7 @@
 
 <section>
 
-	<a href="<%= data.photos[i].id%>">
+	<a href="#<%= data.photos[i].id%>">
 	    <header>
 			<h1><b>ID</b> <%= data.photos[i].id %></h1>
 			<p><b>CAM</b> <%= data.photos[i].camera.full_name %></p>
@@ -16,6 +16,24 @@
 	</a>
 
 </section>
+
+<article id="<%= data.photos[i].id%>">
+	<nav>
+		<li>
+			<a href="http://localhost:1337" id="close">Photos</a>
+		</li>
+		<li>
+			<a>> img</a>
+		</li>
+	</nav>
+	<header>
+		<h1><b>ID</b> <%= data.photos[i].id %></h1>
+		<p><b>CAM</b> <%= data.photos[i].camera.full_name %></p>
+		<p><b>SOL</b> <%= data.photos[i].sol %></p>
+    </header>
+	<img src="<%= data.photos[i].img_src %>" />
+	
+</article>
 
 <% } %>
 
