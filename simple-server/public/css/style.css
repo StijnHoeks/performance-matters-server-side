@@ -85,8 +85,11 @@ article {
 	height: 100%;
 	padding: 5rem 15%;
 }
-article header, article img {
+article img {
 	margin-top: 1rem;
+}
+article header {
+	margin-top: 2rem;
 }
 article img {
 	height: 100%;
